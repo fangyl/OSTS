@@ -1,0 +1,54 @@
+BODY {
+	MARGIN: 0px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+b_17 {
+	FONT-SIZE: 14px
+}
+A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+A:active {
+	TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "ËÎÌו"
+}
+.border {
+	BORDER-RIGHT: #2a8fc3 1px solid; BORDER-TOP: #2a8fc3 1px solid; BORDER-LEFT: #2a8fc3 1px solid; BORDER-BOTTOM: #2a8fc3 1px solid
+}
+.border2 {
+	BORDER-RIGHT: #ffae00 1px solid; BORDER-TOP: #ffae00 1px solid; BORDER-LEFT: #ffae00 1px solid; BORDER-BOTTOM: #ffae00 1px solid
+}
+.border3 {
+	BORDER-RIGHT: #dedede 1px solid; BORDER-TOP: #dedede 1px solid; BORDER-LEFT: #dedede 1px solid; BORDER-BOTTOM: #dedede 1px solid; BACKGROUND-COLOR: #ebebeb
+}
+.boeder4 {
+	BORDER-RIGHT: #00ad4d 1px solid; BORDER-TOP: #00ad4d 1px solid; BORDER-LEFT: #00ad4d 1px solid; BORDER-BOTTOM: #00ad4d 1px solid
+}
+.input_border {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; COLOR: #999999; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.ima_border {
+	BORDER-RIGHT: #dedede 1px solid; BORDER-TOP: #dedede 1px solid; BORDER-LEFT: #dedede 1px solid; BORDER-BOTTOM: #dedede 1px solid
+}
+.font_14 {
+	FONT-SIZE: 14px
+}
+.font_01 {
+	COLOR: #ffffff
+}
+.font_02 {
+	COLOR: #ffffff
+}
+.font_03 {
+	COLOR: #ffffff
+}
+.font_04 {
+	COLOR: #ffae00
+}

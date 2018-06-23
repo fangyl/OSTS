@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="gb2312"/><!-- 此一句解决乱码 -->
+<package name="com.struts" extends="struts-default">
+	<!-- 管理员登录 -->
+    <action name="loginChange" class="com.action.AdminAction" method="loginChange">
+    <!-- loginChange对应jsp页面表单提交的action属性，在com.action.AdminAction中对应的也有一个loginChange方法 -->
+	<result name="login" >/admin/login.jsp</result>
+	<result name="system" >/admin/index.jsp</result>
+	</action>	
+	<!-- 管理员修改密码 -->
+    <action name="adminPwd" class="com.action.AdminAction" method="adminPwd">
+	<result name="pwd" >/admin/system/editpwd.jsp</result> 
+	</action>	
+	<!-- 管理员退出登录 -->
+    <action name="adminExit" class="com.action.AdminAction" method="adminExit">
+	<result name="exit" >/index.jsp</result> 
+	</action>	
+	<!-- 增加管理员 -->
+    <action name="addManage" class="com.action.AdminAction" method="addManage">
+	<result name="success" >/admin/system/index.jsp</result> 
+	</action>
+	<!-- 删除管理员 -->
+    <action name="delManage" class="com.action.AdminAction" method="delManage">
+	<result name="success" >/admin/system/index.jsp</result> 
+	</action>	 
+	
+	<!-- 增加分类 -->
+    <action name="addFenlei" class="com.action.ComAction" method="addFenlei">
+	<result name="success" >/admin/fenlei/index.jsp</result> 
+	</action>	
+	<!-- 删除分类 -->
+    <action name="delFenlei" class="com.action.ComAction" method="delFenlei">
+	<result name="success" >/admin/fenlei/index.jsp</result> 
+	</action>	
+
+	 
+	
+	<!-- 删除会员 -->
+    <action name="delMember" class="com.action.MemberAction" method="delMember">
+	<result name="success" >/admin/member/index.jsp</result> 
+	</action>	
+	<!-- 锁定会员 -->
+    <action name="useMember" class="com.action.MemberAction" method="useMember">
+	<result name="success" >/admin/member/index.jsp</result> 
+	</action>	
+	
+	
+	<!-- 会员注册 -->
+    <action name="regMember" class="com.action.MemberAction" method="regMember">
+	<result name="success" >/login.jsp</result> 
+	</action>
+	<!-- 会员修改注册信息 -->
+    <action name="upMember" class="com.action.MemberAction" method="upMember">
+	<result name="success" >/member/info/index.jsp</result> 
+	</action>
+	<!-- 会员修改密码 -->
+    <action name="pwdMember" class="com.action.MemberAction" method="pwdMember">
+	<result name="success" >/member/info/editpwd.jsp</result> 
+	</action>
+	<!-- 会员登录 -->
+    <action name="loginMember" class="com.action.MemberAction" method="loginMember">
+	<result name="success" >/member/index.jsp</result> 
+	</action>
+	
+	<!-- 会员登录 -->
+    <action name="loginMember2" class="com.action.MemberAction" method="loginMember2">
+	<result name="success" >/index.jsp</result> 
+	</action>
+	<!-- 会员找回密码 -->
+    <action name="lostPwd" class="com.action.MemberAction" method="lostPwd">
+	<result name="success" >/index.jsp</result> 
+	</action>
+	<!-- 会员 退出登录-->
+    <action name="exitMember" class="com.action.MemberAction" method="exitMember">
+	<result name="success" >/login.jsp</result> 
+	</action>	
+	
+	
+	<!-- 删除商品 -->
+    <action name="delSp" class="com.action.ComAction" method="delSp">
+	<result name="success" >/admin/sp/index.jsp</result> 
+	</action>	
+	
+	<!-- 评论 -->
+    <action name="addPl" class="com.action.ComAction" method="addPl">
+	<result name="success" >/spinfo.jsp</result> 
+	</action>	
+	<!-- 删除评论 -->
+    <action name="delPl" class="com.action.ComAction" method="delPl">
+	<result name="success" >/admin/sp/pl.jsp</result> 
+	</action>	
+	
+	<!-- 增加信息 -->
+    <action name="addNews" class="com.action.NewsAction" method="addNews">
+	<result name="success" >/admin/news/index.jsp</result> 
+	</action> 
+	<!-- 删除信息 -->
+    <action name="delNews" class="com.action.NewsAction" method="delNews">
+	<result name="success" >/admin/news/index.jsp</result> 
+	</action>	
+	
+	<!-- 公告 -->
+	<action name="addCt" class="com.action.ComAction" method="addCt">
+	<result name="success" >/admin/gg/index.jsp</result> 
+	</action>
+	<!-- 删公告 -->
+	<action name="delCt" class="com.action.ComAction" method="delCt">
+	<result name="success" >/admin/gg/index.jsp</result> 
+	</action>
+	
+	
+	
+	<action name="dcGl" class="com.action.ComAction" method="dcGl">
+	<result name="success" >/admin/dc/index.jsp</result> 
+	</action>
+	
+	<action name="dcQl" class="com.action.ComAction" method="dcQl">
+	<result name="success" >/admin/dc/index.jsp</result> 
+	</action>
+	
+	<action name="dcTj" class="com.action.ComAction" method="dcTj">
+	<result name="success" >/bz.jsp</result> 
+	</action>
+		
+    <action name="addGw" class="com.action.ComAction" method="addGw">
+	<result name="success" >/sp.jsp</result> 
+	</action>	
+	<action name="upGw" class="com.action.ComAction" method="upGw">
+	<result name="success" >/gwc.jsp</result> 
+	</action>	
+	<action name="delGw" class="com.action.ComAction" method="delGw">
+	<result name="success" >/gwc.jsp</result> 
+	</action>
+	
+	
+	<action name="gwDd" class="com.action.ComAction" method="gwDd">
+	<result name="login" >/index.jsp</result> 
+	<result name="success" >/gwc.jsp</result> 
+	</action>	
+	
+	<action name="wcDd" class="com.action.ComAction" method="wcDd"> 
+	<result name="success" >/admin/dd/index.jsp</result> 
+	</action>
+	
+	<action name="delDd" class="com.action.ComAction" method="delDd"> 
+	<result name="success" >/admin/dd/index.jsp</result> 
+	</action>
+	
+	<action name="delDd2" class="com.action.ComAction" method="delDd2"> 
+	<result name="success" >/member/gw/index.jsp</result> 
+	</action>
+</package>
+</struts>    
